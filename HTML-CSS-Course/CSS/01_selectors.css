@@ -1,0 +1,39 @@
+* {
+   padding: 10px;
+}
+
+body {
+   background: #eee;
+}
+
+.card {
+   padding: 10px;
+   background: #fff;
+   margin-bottom: 10px;
+}
+
+.card p {
+   font-size: 23px;
+}
+
+.html {
+   background: #d94b1e;
+   color: rgb(45, 8, 252);
+}
+
+.css {
+   background: #0068b0;
+   color: rgb(225, 250, 1);
+}
+
+#header {
+   background: #ddd;
+   padding: 10px;
+}
+
+#header, .card {
+   margin-bottom: 10px;
+}
+
+
+

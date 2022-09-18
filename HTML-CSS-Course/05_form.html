@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Form</title>
+</head>
+<body>
+   <form>
+      <div>
+         <label for="text">Text</label>
+         <input type="text" id="text" placeholder="default text" readonly>
+      </div>
+      <br>
+      <div>
+         <label for="email">Email</label>
+         <input type="email" id="email" placeholder="enter email">
+      </div>
+      <br>
+
+      <div>
+         <label for="password">Password</label>
+         <input type="password" id="password">
+      </div>
+      <br>
+
+      <div>
+         <label for="number">Number</label>
+         <input type="number" id="number" min="0" max="100">
+      </div>
+      <br>
+
+      <div>
+         <label for="range">Range</label>
+         <input type="range" id="range" min="0" max="10" step="2">
+      </div>
+      <br>
+
+      <div>
+         <label for="date">Date</label>
+         <input type="date" id="date">
+      </div>
+      <br>
+
+      <div>
+         <label for="color">Color</label>
+         <input type="color" id="color">
+      </div>
+      <br>
+
+      <div>
+         <label for="message">Message</label>
+         <br>
+         <textarea id="message" cols="25" rows="5"></textarea>
+      </div>
+      <br>
+
+      <div>
+         <label for="sex">What is your gender</label>
+         <select id="sex">
+            <option value="male">Man</option>
+            <option value="female">Woman</option>
+            <option value="other" selected>Other</option>
+         </select>
+      </div>
+      <br>
+
+      <div>
+         <label>Number of works</label>
+         <input type="radio" name="work"> 1
+         <input type="radio" name="work"> 2
+         <input type="radio" name="work"> 5
+         <input type="radio" name="work"> 10+
+      </div>
+      <br>
+
+      <div>
+         <label>Favorite food</label>
+         <input type="checkbox" name="food"> Potatos
+         <input type="checkbox" name="food"> Bread
+         <input type="checkbox" name="food"> Fish
+         <input type="checkbox" name="food"> Apples
+      </div>
+
+      <!-- <input type="submit" value="Submit form"> -->
+      <button type="submit">Submit form</button>
+   </form>
+   <hr>
+
+   <h1>Contact with me</h1>
+   <form>
+      <div>
+         <label for="text">Your name:</label>
+         <input type="text" id="text" placeholder="Enter name">
+      </div>
+      <br>
+
+      <div>
+         <label for="email">Your email:</label>
+         <input type="email" id="email" placeholder="Enter email">
+      </div>
+      <br>
+
+      <div>
+         <label for="message">Your message:</label>
+         <br>
+         <textarea id="message" cols="25" rows="5" placeholder="Enter message..."></textarea>
+      </div>
+      <button type="submit">Send!</button>
+   </form>
+
+</body>
+</html>

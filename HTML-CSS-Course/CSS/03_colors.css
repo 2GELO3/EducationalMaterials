@@ -1,0 +1,32 @@
+body {
+   color: black;
+   background: #f1f1f1;
+}
+
+.col {
+   background: rgb(247, 5, 98);
+}
+
+.color-1 {
+   color: darkred;
+}
+
+/* RGB - RedGreenBlue */
+/* 00 - ff */
+.color-2 {
+   color: #4B0082;
+}
+
+.color-3 {
+   color: #ddd;
+}
+
+.color-4 {
+   color: rgb(0, 150, 0)
+   /* opacity: 0.2; */
+}
+
+.color-5 {
+   color: rgb(0, 0, 0, 255.3)
+}
+
