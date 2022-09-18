@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<head>
+  <title>HTML-формы</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <p>Форма для отправки файлов на сервер</p>
+  <em>Файли не более 2 мегабайт!</em>
+  <form action='form2.php' method='post' enctype="multipart/form-data">
+    <!-- Загрузка файла на сервер -->
+    <input type="file" name="filename"><br>
+    <input type='submit' value='Отправить'>
+  </form>
+
+</body>
+</html>
