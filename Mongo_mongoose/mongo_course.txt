@@ -1,0 +1,72 @@
+db.users.insert({
+  name: "gelo",
+  age: 21
+})
+
+db.users.insertMany([
+  {name: "vasya", age: 28},
+  {name: "pety", age: 22},
+  {name: "lena", age: 23},
+  {name: "olga", age: 24},
+  {name: "dima", age: 25},
+])
+
+db.users.updateMany(
+  {name: "dima"},
+  {
+    $set: {
+      name: "Ilon Mask",
+      age: 45
+    }
+  }
+)
+
+db.users.updateMany(
+  {},
+  {
+    $rename: {
+      name: "fullname",
+    }
+  }
+)
+
+db.users.bulkWrite([
+    {
+    insertOne: {
+      document: {name: "nastya", age: 18}
+    }
+  },
+  {
+    deleteOne: {
+      filter: {name: "pety"}
+    }
+  }
+])
+
+
+db.users.update(
+  {fullname: "pety"},
+  {
+    $set: {
+      posts: [
+        {title: "javascript", text: "js top"},
+        {title: "mongo", text: "mongo database"},
+      ]
+    }
+  }
+)
+
+db.users.findOne(
+  {fullname: "pety"},
+  {posts: 1}
+)
+
+db.users.find(
+  {
+    posts: {
+      $elemMatch: {
+        title: "javascript"
+      }
+    }
+  }
+)
